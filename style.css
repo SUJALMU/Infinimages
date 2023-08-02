@@ -1,121 +1,157 @@
-* {
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    text-decoration: none;
+body {
+    background-color: whitesmoke;
 }
 
-body{
-    min-height: 100vh;
-    background-color: #fafafa;
-}
-header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    box-shadow: 0 5px 10px white;
-    padding: 20px 7%;
+#navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-header .logo {
-    font-weight: bolder;
-    font-size: 30px;
-    color: black;
-}
-header .navbar ul li {
-    position: relative;
-    float: left;
     list-style: none;
 }
-header .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #696969;
-    display: block;
+ul {
+    margin: 0;
+    padding: 0;
 }
-header .navbar ul li a:hover {
-   color: black;
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 120%;
 }
-header .navbar ul li ul {
-    position: absolute;
-    left: 0;
-    width: 100px;
-    background: whitesmoke;
-    display: none;
+a {
+    text-decoration: none;
+    color: gray;
 }
-header .navbar ul li ul li {
-    width: 100%;
-    border-top: 1px solid whitesmoke;
-}
-header .navbar ul li ul li ul {
-    left: 200px;
+nav {
+    padding: 38px 30px;
+    position: fixed;
     top: 0;
+    right: 0;
+    width: 400px;
+    padding-right: 70px;
+    padding-top: 35px;
 }
-header .navbar ul li:hover > ul {
-    display: initial;
+
+#nav {
+    display: flex;
 }
-img {
-    width: 350px;
-    height: 450px;
+
+#logo h1 {
+    padding-left: 50px;
+    font-size: 250%;
+    margin-top: 15px;
 }
-#img {
-    position: fixed;
-    width: 100vw; 
-    height: 100vh; 
-    overflow: hidden; 
-  }
-  img {
-    position: fixed;
-  }
-  #img {
-    top: calc(100vh - 450px); 
-    left: calc(100vw - 400px); 
-  }
-  #headline, #last-text  {
+
+#writting {
+    display: flex;
+}
+#headline h1 {
+    margin: 0;
+    padding-top: 10px;
+    margin-left: 45px;
+}
+#passage p {
+    margin: 0;
+    color: grey;
+}
+#passage {
+    margin-top: 10px;
+    margin-left: 70px;
+    padding-left: 30px;
     text-align: center;
-    padding-top: 120px;
-    padding-right: 200px;
-  }
-  #last-text button{
-    background-color: black;
+}
+#passage button {
+    background-color: goldenrod;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
     cursor: pointer;
-  }
-  #last-text {
-    color: grey;
-  }
-  #headline {
-    color: black;
-    margin-bottom: 30px;
-  }
-  .navbar button {
-    background-color: whitesmoke;
-    border: solid whitesmoke;
-    padding: 0px 
-  }
-  
+}
+#img {
+    margin-left: 40px;
+}
+
+
+
+#img-p {
+    display: flex;
+}
+#right-row {
+    background-color: hsl(240, 100%, 5%);
+    height: 375px;
+    width: 400px;
+    margin-left: 15px;
+}
+#right-row h1 {
+    color: goldenrod;
+    padding-left: 25px;
+}
+#right-row  h2 {
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+#right-row  p {
+    color: white;
+    padding-left: 25px;
+    padding-top: 2px;
+    margin: 0;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-@media (max-width: 996px) {
-    header {
-        padding: 200;
-    }
+#bottom {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+#num1, #num2, #num3 {
+    display: flex;
+    padding-left: 25px;
+}
+#num1 h1 {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
+}
+#num2 h1 {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
+}
+#num3 h1 {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
+}
+#num1 h2 {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#num2 h2 {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#num3 h2 {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#num1 p {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
+}
+#num2 p {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
+}
+#num3 p {
+    margin: 0;
+    margin-left: 10px;
+    color: gray;
 }
